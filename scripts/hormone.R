@@ -1,9 +1,13 @@
 #Day 3####
-#Setting working directory ####
-folder <- "D:/trainingen/zelfgegeven/Rintro/exercises"
+
+#Setting working directory - change the path to the folder where you have installed the project####
+folder <- "~/RDM-LS"
 setwd(folder)
 
-Hormone <- read.csv2("Rdata/Hormone.csv")
+#import the library ggplot2
+library(ggplot2)
+
+Hormone <- read.csv2("data/20201110-hormone.csv")
 Hormone
 names(Hormone)[3] <- "conc"
 
